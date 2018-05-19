@@ -1,0 +1,11 @@
+{
+    "name": "Dancing Robots",
+    "short_name" : "Dancing",
+    "start_url": "index.html",
+    "scope" : "./",
+    "background_color": "#fff",
+    "display": "standalone",
+    "description": "PWA with dancing robots which you can drag around"
+    
+    
+}
