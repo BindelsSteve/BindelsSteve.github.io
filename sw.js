@@ -15,7 +15,9 @@ self.addEventListener('install', function(event) {
       return cache.addAll([
         './',
         'css/style.css',
-        'js/index.js'
+        'js/index.js',
+        'starwars.html',
+        'css/starwarsintro.css'
       ]);
     })
   );
