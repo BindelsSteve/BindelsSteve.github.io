@@ -33,8 +33,13 @@ if (window.location.href.indexOf("fullcpgrid") > -1) {
 	</h1>
 <canvas></canvas>
 
-<script  src="js/script.js"></script>
-<script  src="js/sw.js"></script>
 <script  src="js/index.js"></script>
+<script>
+		if ('serviceWorker' in navigator) {
+		  navigator.serviceWorker.register('service-worker.js')
+			.then(() => console.log('service worker installed'))
+			.catch(err => console.log('Error', err));
+		}
+	  </script>
 </body>
 </html>
