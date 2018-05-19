@@ -14,10 +14,10 @@ self.addEventListener('install', function(event) {
       // And add resources to it
       return cache.addAll([
         './',
-        'css/style.css',
         'js/index.js',
         'starwars.html',
-        'css/starwarsintro.css'
+        'css/starwarsintro.css',
+        'css/style.css'
       ]);
     })
   );
