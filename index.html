@@ -25,7 +25,9 @@ if (window.location.href.indexOf("fullcpgrid") > -1) {
 <meta name="theme-color" content="#ffffff">
 
 
- <!-- <meta 	name="viewport" content="width=device-width, initial-scale=1.0"> -->
+<!-- <meta 	name="viewport" content="width=device-width, initial-scale=1.0"> -->
+
+<meta 	name="viewport" content="width=device-width">
 </head>
 <body>
 	<h1>
@@ -36,9 +38,8 @@ if (window.location.href.indexOf("fullcpgrid") > -1) {
 
 <script  src="js/index.js"></script>
 <script>
-		// Let's register our serviceworker
+		
 		navigator.serviceWorker.register('sw.js', {
-		  // The scope cannot be parent to the script url
 		  scope: './'
 		});
 </script>
