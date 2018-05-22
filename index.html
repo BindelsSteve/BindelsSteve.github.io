@@ -35,11 +35,23 @@ if (window.location.href.indexOf("fullcpgrid") > -1) {
 <canvas></canvas>
 
 <script  src="js/index.js"></script>
-<script>
+<!-- <script>
 		
 		navigator.serviceWorker.register('sw.js', {
 		  scope: './'
 		});
-</script>
+		
+</script> -->
+<script>
+	if ('serviceWorker' in navigator) {
+	  console.log("Will the service worker register?");
+	  navigator.serviceWorker.register('sw.js')
+		.then(function(reg){
+		  console.log("Yes, it did.");
+		}).catch(function(err) {
+		  console.log("No it didn't. This happened: ", err)
+		});
+	}
+  </script>
 </body>
 </html>
