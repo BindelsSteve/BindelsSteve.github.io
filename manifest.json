@@ -5,7 +5,19 @@
     "scope" : "./",
     "background_color": "#fff",
     "display": "standalone",
-    "description": "PWA with dancing robots which you can drag around"
+    "description": "PWA with dancing robots which you can drag around",
+    "icons": [
+        {
+          "src": "/android-chrome-192x192.png",
+          "type": "image/png",
+          "sizes": "192x192"
+        },
+        {
+          "src": "/android-chrome-512x512.png",
+          "type": "image/png",
+          "sizes": "512x512"
+        }
+      ]
     
     
 }
