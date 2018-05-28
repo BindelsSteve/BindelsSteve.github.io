@@ -17,7 +17,9 @@ self.addEventListener('install', function(event) {
         'css/style.css',
         'js/index.js',
         'starwars.html',
-        'css/starwarsintro.css'
+        'css/starwarsintro.css',
+        'manifest.json',
+        'script.js'
       ]);
     })
   );
