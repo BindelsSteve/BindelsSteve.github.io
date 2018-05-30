@@ -45,7 +45,8 @@ self.addEventListener('fetch', function(event) {
 });*/
 
 const cacheFiles = [
-  './',
+  //'./',
+  'index.html',
   'css/style.css',
   'js/index.js',
   'starwars.html',
