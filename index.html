@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Dancers</title>
+  <title>WorldClock</title>
 
 
 <link rel="stylesheet" href="css/style.css">
@@ -20,12 +20,26 @@
 <p id="yourClocksTab" class="tabHead active">Your clocks</p>
 <p id="addClockTab" class="tabHead clickable">Add a clock</p>
 <div class="tab" id="clocks">
-	<p>clocks</p>
+	<!-- <canvas id="canvas" width="200" height="200" style="background-color:#333"></canvas> -->
 </div>
 <div class="tab hidden" id="addClock">
-	<p>addClock</p>
+	<form>
+			<form action="#" method="post">
+				<p>Name of clock</p>
+				<input required="required" type="text" name="name">
+				<p>Timezone (start typing and it will get autocompleted)</p>
+				<input required="required" list="timeZones" name="timeZone">
+				<datalist id="timeZones">
+				  
+				</datalist>
+				<input type="submit">
+			  </form>
+	</form>
 </div>
+
 <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/moment-timezone-with-data.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 
 
