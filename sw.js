@@ -49,6 +49,7 @@ const cacheFiles = [
   'index.html',
   'css/style.css',
   'manifest.json',
+  'js/jquery-1.11.3.js',
   'js/script.js'];
 
 const cacheName = 'v2';
