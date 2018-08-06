@@ -48,9 +48,6 @@ const cacheFiles = [
   //'./',
   'index.html',
   'css/style.css',
-  'js/index.js',
-  'starwars.html',
-  'css/starwarsintro.css',
   'manifest.json',
   'js/script.js'];
 

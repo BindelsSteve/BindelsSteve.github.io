@@ -16,11 +16,30 @@ canvas {
 }
 h1{
 	text-align: center;
-	color: red;
-	background-color: #343434;
-	padding: 0;
+	color:white;
+	background-color: #96c9f1;
+	padding: 1%;
 	margin: 0%;
+	margin-bottom: 0%;
+	font-size: 4em;
 }
-a{
-	color: #EBD71C;
+.tabHead{
+	background-color:grey;
+	color: white;
+	width: 50%;
+	float: left;
+	text-align: center;
+	margin-top: 0%;
+	font-size: 2em;
+}
+
+.active{
+	background-color:#96c9f1; 
+	color: #000;
+}
+.clickable:hover{
+	cursor: pointer;
+}
+.hidden{
+	display: none;
 }

@@ -1,7 +1,7 @@
 {
-  "name": "Dancing robots",
-  "short_name": "Dancers",
-  "theme_color": "#000000",
+  "name": "worldclock",
+  "short_name": "worldclock",
+  "theme_color": "#96c9f1",
   "background_color": "#ffffff",
   "display": "standalone",
   "orientation": "portrait",

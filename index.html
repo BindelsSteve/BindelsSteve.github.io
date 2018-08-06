@@ -7,39 +7,27 @@
 
 
 <link rel="stylesheet" href="css/style.css">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" href="icons/favicon.ico" type="image/x-icon">
 <link rel="manifest" href="manifest.json">
 
-<script>
-	if (window.location.href.indexOf("fullcpgrid") > -1) {
-		document.addEventListener('DOMContentLoaded', function() {
-			const original = document.createElement('iframe');
-			original.style.display = 'none';
-			document.body.appendChild(original);
-			window.requestAnimationFrame = original.contentWindow.requestAnimationFrame;
-		}, false);
-	}
-	</script>
-<!--robots are too big on mobile when this is used..-->
-<!-- <meta 	name="viewport" content="width=device-width, initial-scale=1.0"> -->
+
+<meta 	name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<h1>
-		Drag them around!
-		<a href="starwars.html">Explanation + some thoughts</a>
-	</h1>
-<canvas></canvas>
-
-<script  src="js/index.js"></script>
+<header>
+	<h1>World Clock</h1>
+</header>
+<p id="yourClocksTab" class="tabHead active">Your clocks</p>
+<p id="addClockTab" class="tabHead clickable">Add a clock</p>
+<div class="tab" id="clocks">
+	<p>clocks</p>
+</div>
+<div class="tab hidden" id="addClock">
+	<p>addClock</p>
+</div>
+<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
-<!-- <script>
-		
-		navigator.serviceWorker.register('sw.js', {
-		  scope: './'
-		});
-		
-</script> -->
+
 
 </body>
 </html>
