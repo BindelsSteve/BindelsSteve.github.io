@@ -9,7 +9,7 @@ if ('serviceWorker' in navigator) {
 }
 let localTimeClock = function () {
   $("#clocks").empty();
-  $("#clocks").append("<div class=\"clockBlock\"><p>local time</p><canvas id=\"localTimeClock\" width=\"200\" height=\"200\" style=\"background-color:#333\"></canvas></div>");
+  $("#clocks").append("<div class=\"clockBlock\"><p>local time</p><canvas id=\"localTimeClock\" width=\"200\" height=\"200\" style=\"background-color:white\"></canvas></div>");
   let canvas = document.getElementById("localTimeClock");
   let ctx = canvas.getContext("2d");
   let radius = canvas.height / 2;
@@ -22,7 +22,7 @@ let localTimeClock = function () {
     zones = value;
     if (zones != null){
       zones.forEach(function(obj){
-        $("#clocks").append("<div class=\"clockBlock\"><p>"+obj.name +"</p><canvas id=\""+obj.name +"\" width=\"200\" height=\"200\" style=\"background-color:#333\"></canvas></div>");
+        $("#clocks").append("<div class=\"clockBlock\"><p>"+obj.name +"</p><canvas id=\""+obj.name +"\" width=\"200\" height=\"200\" style=\"background-color:white\"></canvas></div>");
         let canvas2 = document.getElementById(obj.name);
         let ctx2 = canvas2.getContext("2d");
         let radius2 = canvas2.height / 2;
@@ -47,17 +47,6 @@ let showAddClock = function () {
   $('#addClock').removeClass('hidden');
   $('#clocks').addClass('hidden');
 }
-
-
-
-
-// var canvas = document.getElementById("canvas");
-// var ctx = canvas.getContext("2d");
-// var radius = canvas.height / 2;
-// ctx.translate(radius, radius);
-// radius = radius * 0.90
-// drawClock();
-
 function drawClock(ctx, radius, timeZone) {
   drawFace(ctx, radius);
   drawNumbers(ctx, radius);
@@ -177,7 +166,7 @@ $(document).ready(function () {
   addTimeZones();
  
   
-  localTimeClock();
+  //localTimeClock();
   setInterval(localTimeClock, 1000);
   $('.tabHead').on('click', changeTab);
   $('#yourClocksTab').on('click', showClocks);

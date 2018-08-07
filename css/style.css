@@ -41,6 +41,8 @@ div>p {
 }
 .clockBlock{
 	width: 20%;
+	margin: 0%;
+	display: inline-block;
 }
 #clocks{
 	width: 100%;
