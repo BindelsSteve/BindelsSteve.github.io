@@ -160,6 +160,12 @@ let submitForm = function (e) {
   });
 }
 
+let removeClocks = function(){
+  localforage.clear().then(function() {
+}).catch(function(err) {
+    console.log(err);
+});
+}
 
 $(document).ready(function () {
   
@@ -171,5 +177,6 @@ $(document).ready(function () {
   $('.tabHead').on('click', changeTab);
   $('#yourClocksTab').on('click', showClocks);
   $('#addClockTab').on('click', showAddClock);
+  $('.remove').on('click', removeClocks);
   $('form').on('submit', submitForm);
 });
