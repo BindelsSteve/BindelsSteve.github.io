@@ -173,18 +173,11 @@ let submitForm = function (e) {
 
 
 $(document).ready(function () {
-  localforage.clear().then(function() {
-    // Run this code once the database has been entirely deleted.
-    console.log('Database is now empty.');
-}).catch(function(err) {
-    // This code runs if there were any errors
-    console.log(err);
-});
+  
   addTimeZones();
-  event = new Date();
-  console.log(event.toLocaleString('en-GB', {
-    timeZone: moment.tz.guess()
-  }));
+ 
+  
+  localTimeClock();
   setInterval(localTimeClock, 1000);
   $('.tabHead').on('click', changeTab);
   $('#yourClocksTab').on('click', showClocks);
