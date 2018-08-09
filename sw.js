@@ -50,6 +50,9 @@ const cacheFiles = [
   'css/style.css',
   'manifest.json',
   'js/jquery-1.11.3.js',
+  'js/localforage.min.js',
+  'js/moment-timezone-with-data.min.js',
+  'js/moment.min.js',
   'js/script.js'];
 
 const cacheName = 'v2';
