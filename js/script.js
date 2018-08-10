@@ -152,18 +152,18 @@ let submitForm = function (e) {
       $("#addClockTab").addClass("clickable").removeClass("active");
       showClocks();
     }).catch(function (err) {
-      console.log(err);
+      //console.log(err);
     });
     //console.log(zonesArray);
   }).catch(function (err) {
-    console.log(err);
+    //console.log(err);
   });
 }
 
 let removeClocks = function(){
   localforage.clear().then(function() {
 }).catch(function(err) {
-    console.log(err);
+    //console.log(err);
 });
 }
 
