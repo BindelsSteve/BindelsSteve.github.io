@@ -147,14 +147,14 @@ let submitForm = function (e) {
       });
     }
     localforage.setItem('zones', zonesArray).then(function (value) {
-      console.log(value);
+      //console.log(value);
       $("#yourClocksTab").addClass("active").removeClass("clickable");
       $("#addClockTab").addClass("clickable").removeClass("active");
       showClocks();
     }).catch(function (err) {
       console.log(err);
     });
-    console.log(zonesArray);
+    //console.log(zonesArray);
   }).catch(function (err) {
     console.log(err);
   });
