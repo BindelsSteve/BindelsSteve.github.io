@@ -1,9 +1,18 @@
-all code can be reviewed at https://github.com/BindelsSteve/BindelsSteve.github.io
+all code can be reviewed at https://github.com/BindelsSteve/BindelsSteve.github
 
-it's a small app to fidget with when you are bored or doing something else.
+this app shows the local time, you can add other clocks from other timezones.
+the clocks are made with a w3schools tutorial on clocks,
+for the timezones I used a library called moment.js
+and to store things client side I used localforage.
+ofcourse it wouldn't be a pwa without a manifest and serviceworker.
 
-it uses basic pwa tech like :manifest, serviceworker
+you can check the website at BindelsSteve.github.io
 
-you can check the website at BindelsSteve.github.io or at https://stevebindels-dancers.herokuapp.com/index.html
-
-I did not implement any security headers because both github and heroku use https
+I did not implement any security headers but if i would i would use:
+Strict-Transport-Security :(this one get's automaticly done by github pages) just to enforce the use of https,
+X-Frame-Options as defense against clickjacking,
+X-Content-Type-Options: nosniff to tell the browser that the content type is the content type i say it is,
+"X-XSS-Protection: 1; mode=block" :configuration of the cross-site scripting filter built into most browsers,
+Referrer-Policy : because privacy is a good thing to have,
+Content-Security-Policy, to protect against xss attacks,
+Feature-Policy to control which features and api's can be used.

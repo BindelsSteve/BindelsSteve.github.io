@@ -147,23 +147,18 @@ let submitForm = function (e) {
       });
     }
     localforage.setItem('zones', zonesArray).then(function (value) {
-      //console.log(value);
       $("#yourClocksTab").addClass("active").removeClass("clickable");
       $("#addClockTab").addClass("clickable").removeClass("active");
       showClocks();
     }).catch(function (err) {
-      //console.log(err);
     });
-    //console.log(zonesArray);
   }).catch(function (err) {
-    //console.log(err);
   });
 }
 
 let removeClocks = function(){
   localforage.clear().then(function() {
 }).catch(function(err) {
-    //console.log(err);
 });
 }
 
@@ -171,8 +166,6 @@ $(document).ready(function () {
   
   addTimeZones();
  
-  
-  //localTimeClock();
   setInterval(localTimeClock, 1000);
   $('.tabHead').on('click', changeTab);
   $('#yourClocksTab').on('click', showClocks);
