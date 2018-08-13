@@ -7,7 +7,7 @@ if ('serviceWorker' in navigator) {
       console.log("No it didn't. This happened: ", err)
     });
 }
-let localTimeClock = function () {
+let updateClocks = function () {
   $("#clocks").empty();
   $("#clocks").append("<div class=\"clockBlock\"><p>local time</p><canvas id=\"localTimeClock\" width=\"200\" height=\"200\" style=\"background-color:white\"></canvas></div>");
   let canvas = document.getElementById("localTimeClock");
@@ -96,6 +96,8 @@ function drawNumbers(ctx, radius) {
 function drawTime(ctx, radius, timeZone) {
   var now = new Date();
   let time = now.toLocaleString('en-GB', {timeZone: timeZone})
+  console.log(timeZone);
+  console.log(time);
   var date = new Date(time);
   var hour = date.getHours();
   var minute = date.getMinutes();
@@ -166,7 +168,7 @@ $(document).ready(function () {
   
   addTimeZones();
  
-  setInterval(localTimeClock, 1000);
+  setInterval(updateClocks, 1000);
   $('.tabHead').on('click', changeTab);
   $('#yourClocksTab').on('click', showClocks);
   $('#addClockTab').on('click', showAddClock);
