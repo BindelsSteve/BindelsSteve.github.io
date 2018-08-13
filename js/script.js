@@ -167,7 +167,7 @@ let removeClocks = function(){
 $(document).ready(function () {
   
   addTimeZones();
- 
+  //updateClocks()
   setInterval(updateClocks, 1000);
   $('.tabHead').on('click', changeTab);
   $('#yourClocksTab').on('click', showClocks);
