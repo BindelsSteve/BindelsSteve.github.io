@@ -96,9 +96,8 @@ function drawNumbers(ctx, radius) {
 function drawTime(ctx, radius, timeZone) {
   var now = new Date();
   let time = now.toLocaleString('en-GB', {timeZone: timeZone})
-  console.log(timeZone);
-  console.log(time);
-  var date = new Date(time);
+  //var date = new Date(time);
+  let date = moment(time, 'DD-MM-YYYY,h:mm:ss' ).toDate();
   var hour = date.getHours();
   var minute = date.getMinutes();
   var second = date.getSeconds();
