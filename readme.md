@@ -1,6 +1,7 @@
-all code can be reviewed at https://github.com/BindelsSteve/BindelsSteve.github
+all code can be reviewed at https://github.com/BindelsSteve/BindelsSteve.github.io
 
 this app shows the local time, you can add other clocks from other timezones.
+you can also remove your clocks, but the local time will always be shown.
 the clocks are made with a w3schools tutorial on clocks,
 for the timezones I used a library called moment.js
 and to store things client side I used localforage.
